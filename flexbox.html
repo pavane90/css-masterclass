@@ -9,6 +9,7 @@
     <style>
         .father {
             display: flex;
+            flex-direction: row;
             justify-content:center; /* <-- main axis --> */
             height: 100vh;
             flex-wrap: wrap;
@@ -24,6 +25,9 @@
             align-items: center;
             color:white;
             font-size:50
+        }
+        .box:first-child{
+            align-self: flex-end
         }
     </style>
 </head>
