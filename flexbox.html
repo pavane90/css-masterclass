@@ -10,14 +10,19 @@
         .father {
             display: flex;
             flex-direction: column;
-            justify-content: center; /* <-- main axis --> */
-            align-items: center; /* <-- cross axis --> */
+            justify-content:center; /* <-- main axis --> */
+            align-items: flex-end; /* <-- cross axis --> */
             height: 100vh;
+
+            /*
+            flex-direction이 row면 justify-confent는 좌우정렬, align-items는 수직정렬
+            flex-direction이 column이면 justify-confent는 수직정렬, align-items는 수평정렬
+            */
         }
 
         .box {
-            width: 300px;
-            height: 300px;
+            width: 100px;
+            height: 100px;
             background-color: blue;
             border: 1px solid white;
         }
