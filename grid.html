@@ -10,30 +10,44 @@
         display: grid;
         grid-auto-rows: 100px;
         grid-gap: 10px;
-        grid-template-columns: repeat(5, 100px);
-        color: white;
-        align-items: center;
-        place-items: end center;
-        height: 100vh;
+        grid-template-columns: repeat(5, 1fr);
       }
-
+      .box {
+        display: flex;
+        align-items: cneter;
+        justify-content: center;
+        color: white;
+      }
       .box:nth-child(even) {
-          background-color : #3498db;
+        background-color: #3498db;
       }
       .box:nth-child(odd) {
-          background-color: #34495e;
+        background-color: #34495e;
       }
+      .box:first-child {
+        grid-column-start: 1;
+        grid-column-end: 5;
       }
     </style>
   </head>
 
   <body>
     <div class="father">
-      <div class="box">111</div>
-      <div class="box">222</div>
-      <div class="box">333</div>
-      <div class="box">444</div>
-      <div class="box">555</div>
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+      <div class="box">5</div>
+      <div class="box">6</div>
+      <div class="box">7</div>
+      <div class="box">8</div>
+      <div class="box">9</div>
+      <div class="box">10</div>
+      <div class="box">11</div>
+      <div class="box">12</div>
+      <div class="box">13</div>
+      <div class="box">14</div>
+      <div class="box">15</div>
     </div>
   </body>
 </html>
