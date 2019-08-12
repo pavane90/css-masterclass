@@ -8,31 +8,39 @@
     <style>
       .father {
         display: grid;
-        grid-auto-rows: 200px;
-        grid-gap: 5px;
-        grid-template-columns: repeat(3, 1fr) 4fr;
+        grid-auto-rows: 100px;
+        grid-gap: 10px;
+        grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
       }
-      .first {
-        background-color: #f1c40f;
+
+      .box:nth-child(even) {
+          background-color : #3498db;
       }
-      .second {
-        background-color: #27ae60;
+      .box:nth-child(odd) {
+          background-color: #34495e;
       }
-      .third {
-        background-color: #3498db;
-      }
-      .fourth {
-        background-color: #d35400;
       }
     </style>
   </head>
 
   <body>
     <div class="father">
-      <div class="first"></div>
-      <div class="second"></div>
-      <div class="third"></div>
-      <div class="fourth"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
     </div>
   </body>
 </html>
