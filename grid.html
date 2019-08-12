@@ -1,37 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>CSS Grid</title>
     <style>
-        .father{
-            display:grid;
-            grid-template-columns: 300px 150px;
-            grid-template-rows: 300px 120px;
-            grid-gap: 5px;
-            grid-auto-rows: 60px;
-        }
-        .box{
-            background-color: #f1c40f;
-        }
+      .father {
+        display: grid;
+        grid-auto-rows: 200px;
+        grid-gap: 5px;
+        grid-template-areas:
+          "header header header"
+          "content content sidebar"
+          "content content sidebar"
+          "footer footer footer";
+      }
+      .first {
+        grid-area: header;
+        background-color: #f1c40f;
+      }
+      .second {
+        grid-area: sidebar;
+        background-color: #27ae60;
+      }
+      .third {
+        grid-area: footer;
+        background-color: #3498db;
+      }
+      .fourth {
+        grid-area: content;
+        background-color: #d35400;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="father">
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
+      <div class="first"></div>
+      <div class="second"></div>
+      <div class="third"></div>
+      <div class="fourth"></div>
     </div>
-</body>
-
+  </body>
 </html>
