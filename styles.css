@@ -27,3 +27,11 @@ li:first-child a {
 :--header {
   color: #8e44ad;
 }
+
+@custom-media --ipad-size (450px <= width < 850px);
+
+@media (--ipad-size) {
+  body {
+    background-color: red;
+  }
+}
