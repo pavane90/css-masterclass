@@ -13,7 +13,7 @@ li:not(.target) {
 }
 
 */
-
+/* 
 :root {
   --awesomeColor: 1px solid red;
 }
@@ -34,4 +34,9 @@ li:first-child a {
   body {
     background-color: red;
   }
+}
+*/
+
+h1 {
+  font-family: system-ui;
 }
