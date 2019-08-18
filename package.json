@@ -24,7 +24,8 @@
       "postcss-preset-env": {
         "stage": 0
       },
-      "postcss-color-mod-function": {}
+      "postcss-color-mod-function": {},
+      "css-grid-kiss": true
     }
   },
   "devDependencies": {
